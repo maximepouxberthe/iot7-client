@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "247681689078",
+    "project_id": "audiocast-2109",
+    "storage_bucket": "audiocast-2109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247681689078:android:ad709b7b6d9eaef93e53d7",
+        "android_client_info": {
+          "package_name": "com.polytech.iot.audiocast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247681689078-dgpmroib28le05fhf9j0ac3ui2boutkf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2I1NarwxmA9FaeBkUY5jnSiXaZ3uhNno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247681689078-dgpmroib28le05fhf9j0ac3ui2boutkf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
