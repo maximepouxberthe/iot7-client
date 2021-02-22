@@ -70,3 +70,4 @@ class EmailPasswordActivity : AppCompatActivity() {
     }
 
 }
+

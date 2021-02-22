@@ -6,16 +6,21 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/label"
-        android:text="> Playlist"
+        android:text="  Musiques\n\n"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="goToPlaylist" />
+        android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_musics_list"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/label"
+        android:text="  Playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToPlaylist" />
 
 </LinearLayout>

@@ -16,7 +16,7 @@ class PlaylistActivity : AppCompatActivity() {
 
     var db = FirebaseFirestore.getInstance()
 
-    val musics : ArrayList<Music> = ArrayList()
+    val playlist : ArrayList<Music> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,15 +24,15 @@ class PlaylistActivity : AppCompatActivity() {
 
         viewManager = LinearLayoutManager(this)
 
-        db.collection("playlists")
+        db.collection("playlist")
             .get()
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val music : Music = Music(document.id, document.getString("label")!!)
-                    musics.add(music)
+                    playlist.add(music)
                 }
 
-                viewAdapter = MusicAdapter(musics)
+                viewAdapter = MusicAdapter(playlist)
 
                 recyclerView = findViewById<RecyclerView>(R.id.recycler_musics_list).apply {
                     setHasFixedSize(true)
